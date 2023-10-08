@@ -1,0 +1,12 @@
+{
+  "name": "tour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["tour", "hobby", "sale", "family", "trip", "outdoor"],
+  "author": "Abolfazl Rasoulizade",
+  "license": "ISC"
+}
