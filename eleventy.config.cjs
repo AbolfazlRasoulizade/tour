@@ -7,10 +7,7 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addWatchTarget('./site/');
 
-  eleventyConfig.setQuietMode(true);
-
-  eleventyConfig.addTransform('trimer', (content) => content.trim());
-
+  
   // eleventyConfig.addShortecode
 
   return {
