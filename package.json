@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["tour", "hobby", "sale", "family", "trip", "outdoor"],
-  "author": "Abolfazl Rasoulizade",
-  "license": "ISC"
+  "author": "AbolfazlRasoulizade",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
 }
