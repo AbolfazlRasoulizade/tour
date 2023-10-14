@@ -3,12 +3,9 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'assets': '/',
-  });
+  })
   
   eleventyConfig.addWatchTarget('./site/');
-
-  
-  // eleventyConfig.addShortecode
 
   return {
     HTMLTemplateEngine: 'njk',
