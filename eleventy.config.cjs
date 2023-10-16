@@ -1,4 +1,5 @@
-// const {iconLoad} = require('./shortecode/alwatr-iconLoad.js');
+const {arIcon} = require('./shortcode/ar-icon.js');
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
@@ -6,6 +7,9 @@ module.exports = function (eleventyConfig) {
   })
   
   eleventyConfig.addWatchTarget('./site/');
+  eleventyConfig.addWatchTarget('./shortcode/');
+
+  eleventyConfig.addAsyncShortcode('arIcon', arIcon);
 
   return {
     HTMLTemplateEngine: 'njk',

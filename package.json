@@ -10,6 +10,9 @@
   "author": "AbolfazlRasoulizade",
   "license": "ISC",
   "dependencies": {
+    "@alwatr/icon-set-material": "^0.1.1",
+    "@alwatr/style": "^1.2.0",
     "tailwindcss": "^1.9.6"
   }
+
 }
