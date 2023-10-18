@@ -1,0 +1,70 @@
+<footer class="shrink-0 grow-0 bg-surfaceContainer">
+  <nav
+    class="mx-auto flex h-20 max-w-screen-medium cursor-pointer select-none items-stretch text-labelMedium text-onSurfaceVariant"
+  >
+    <a
+      aria-selected="{{ navId === 'home' }}"
+      href="/"
+      class="group flex grow flex-col items-center justify-start pt-3 aria-selected:pointer-events-none"
+    >
+      <div
+        class="rounded-2xl px-5 py-1 text-[1.5rem] group-hover:stateHover-onSurfaceVariant group-active:stateActive-onSurfaceVariant group-aria-selected:bg-secondaryContainer group-aria-selected:text-onSecondaryContainer"
+      >
+        {% arIcon "list-alt" %}
+      </div>
+      <div class="py-1 group-aria-selected:text-onSurface">تورهای قبلی :)</div>
+    </a>
+
+    <a
+      aria-selected="{{ navId === 'product-list' }}"
+      href="/fa/products/tile.html"
+      class="group flex grow flex-col items-center justify-start pt-3 hover:text-onSurface aria-selected:pointer-events-none"
+    >
+      <div
+        class="rounded-2xl px-5 py-1 text-[1.5rem] group-hover:stateHover-onSurfaceVariant group-active:stateActive-onSurfaceVariant group-aria-selected:bg-secondaryContainer group-aria-selected:text-onSecondaryContainer"
+      >
+        {% arIcon "star" %}
+      </div>
+      <div class="py-1 group-aria-selected:text-onSurface">محصولات</div>
+    </a>
+
+    <a
+      aria-selected="{{ navId === 'home' }}"
+      href="/"
+      class="group flex grow flex-col items-center justify-start pt-3 aria-selected:pointer-events-none"
+    >
+      <div
+        class="rounded-2xl px-5 py-1 text-[1.5rem] group-hover:stateHover-onSurfaceVariant group-active:stateActive-onSurfaceVariant group-aria-selected:bg-secondaryContainer group-aria-selected:text-onSecondaryContainer"
+      >
+        {% arIcon "home" %}
+      </div>
+      <div class="py-1 group-aria-selected:text-onSurface">خانه</div>
+    </a>
+
+    <a
+      aria-selected="{{ navId === 'order-list' }}"
+      href="/fa/order-list.html"
+      class="group flex grow flex-col items-center justify-start pt-3 hover:text-onSurface aria-selected:pointer-events-none"
+    >
+      <div
+        class="rounded-2xl px-5 py-1 text-[1.5rem] group-hover:stateHover-onSurfaceVariant group-active:stateActive-onSurfaceVariant group-aria-selected:bg-secondaryContainer group-aria-selected:text-onSecondaryContainer"
+      >
+        {% arIcon "shapes" %}
+      </div>
+      <div class="py-1 group-aria-selected:text-onSurface">نمیدونم</div>
+    </a>
+
+    <a
+      aria-selected="{{ navId === 'support' }}"
+      href="/fa/support.html"
+      class="group flex grow flex-col items-center justify-start pt-3 hover:text-onSurface aria-selected:pointer-events-none"
+    >
+      <div
+        class="rounded-2xl px-5 py-1 text-[1.5rem] group-hover:stateHover-onSurfaceVariant group-active:stateActive-onSurfaceVariant group-aria-selected:bg-secondaryContainer group-aria-selected:text-onSecondaryContainer"
+      >
+        {% arIcon "phone-enabled" %}
+      </div>
+      <div class="py-1 group-aria-selected:text-onSurface">پشتیبانی</div>
+    </a>
+  </nav>
+</footer>

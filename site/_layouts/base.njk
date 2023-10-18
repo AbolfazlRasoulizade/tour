@@ -1,13 +1,34 @@
-<!Doctype html>
-<html>
+---
+locale: fa-IR
+dir: rtl
+---
+<!doctype html>
+<html lang="{{ locale }}" dir="{{ dir }}" class="h-full w-full">
   <head>
-    <title>based by base</title>
-    <link href="../css/content.css" rel="stylesheet">
-    <meta charset="utf-8">
+    <link rel="preload" as="style" href="/css/main.css?v={{ git.shortSha }}" fetchpriority="high" />
+    <link rel="preload" href="/font/vazirmatn/vazirmatn[wght].woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" as="script" href="/es/main.js?v={{ git.shortSha }}" crossorigin />
+
+    {% include "meta.njk" %}
+    <link rel="stylesheet" href="/css/main.css?v={{ git.shortSha }}" />
+    <script type="module" src="/es/main.js?v={{ git.shortSha }}" defer async></script>
   </head>
 
-  <body dir="rtl">
-    {% include "../_includes/top-app-bar.njk" %}
-    {{ content | safe }}
+  <body
+    class="m-0 h-full max-h-full w-full max-w-full transform-gpu touch-pan-x touch-pan-y touch-pinch-zoom overflow-clip break-words bg-background p-0 font-vazirmatn text-bodyMedium text-onBackground antialiased"
+  >
+    <div id="alwatr_pwa" class="mx-auto flex h-full max-w-5xl">
+      {% include "top-app-bar.njk" %}
+      {% include "navigation-drawer.njk" %}
+      <!-- App container -->
+      <div class="relative flex h-full grow flex-col flex-nowrap items-stretch overflow-clip">
+        {{ content | safe }}
+        {% include "bottom-navigation-bar.njk" %}
+      </div>
+    </div>
+
+    {% include "google-analytics.njk" %}
+    {# {% include "structured-data/breadcrumb.njk" %} #}
+    {% include "prerender.njk" %}
   </body>
 </html>
