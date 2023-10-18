@@ -1,0 +1,13 @@
+{
+  "title": "سافیت",
+  "description": "Khafangzj website.",
+  "author": {"name": "Alwatr", "email": "info@alwatr.ir", "url": "https://github.com/AliMD/alwatr"},
+  "defaultSocialImage": "/img/meta/social.jpg",
+  "defaultLocale": "fa-IR",
+  "theme": {
+    "dark": "#5d92dd",
+    "light": "#215fa6",
+    "splashBackground": "#ffff"
+  },
+  "googleAnalyticsKey": ""
+}
