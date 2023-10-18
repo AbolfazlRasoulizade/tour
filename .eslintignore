@@ -1,0 +1,5 @@
+/cloud/_data
+dist
+.yarn
+node_modules
+*.d.ts
