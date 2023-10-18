@@ -1,0 +1,12 @@
+@import '@alwatr/style/main.css';
+@import '@alwatr/style/palettes/h260.css';
+@import './lib/vazirmatn-font.css';
+@import './lib/scrollbar.css';
+@import './lib/form.css';
+@import './lib/alpine.css';
+
+@layer utilities {
+  .text-ellipsis {
+    @apply overflow-hidden overflow-ellipsis whitespace-nowrap;
+  }
+}
