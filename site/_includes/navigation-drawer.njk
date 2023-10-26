@@ -9,9 +9,9 @@
     class="absolute right-1 top-2 block cursor-pointer rounded-full p-3 text-[1.5rem] state-onSurface extended:invisible"
     @click="$dispatch('request-drawer-close')"
   >
-    {# {% alwatrIcon "close-outline" %} #}
+    {% arIcon "close" %}
   </button>
-  <nav class="flex h-full flex-col overflow-y-auto bg-surfaceContainerLow px-3 py-2 text-onSurfaceVariant elevation-1">
+  <nav class="flex h-full flex-col overflow-y-auto bg-surfaceContainerLow px-3 py-2 text-onSurfaceVariant elevation-2">
     <section x-data class="mt-4 text-center">
       <img
         src="/img/user-avatar.jpeg"
@@ -22,77 +22,77 @@
       <p class="text-ellipsis pt-1 text-bodyMedium">مشتری خوش حسابمون :)</p>
       <button
         @click="clearLocalStorage"
-        class="mt-5 flex h-10 w-full cursor-pointer select-none items-center justify-center rounded-xl border border-outline border-opacity-50 px-4 state-onSurfaceVariant hover:text-primary"
+        class="mt-5 flex h-10 w-full cursor-pointer select-none items-center justify-center rounded-xl border border border-opacity-50 px-4 state-onSurfaceVariant hover:text-primary"
       >
-        {# {% alwatrIcon "log-out-outline", "text-[1.125rem]" %} #}
+        {% arIcon "logout", "text-[1.125rem]" %}
         <span class="px-2 text-labelLarge">خروج از حساب</span>
       </button>
     </section>
 
     <section
-      class="mt-5 grow cursor-pointer select-none border-t border-outline border-opacity-50 pt-5 text-labelLarge"
+      class="mt-5 grow cursor-pointer select-none border-t border-opacity-50 pt-3 text-labelLarge"
     >
       <a
-        href="/"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "home-outline", "text-[1.5rem]" %} #}
+        {% arIcon "home", "text-[1.5rem]" %}
         <div class="grow">صفحه اصلی</div>
       </a>
 
       <a
-        href="/"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "medal-outline", "text-[1.5rem]" %} #}
+        {% arIcon "checklist", "text-[1.5rem]" %}
         <div class="grow">تورهای قبلی :)</div>
       </a>
 
       <a
-        href="/fa/products/tile.html"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "logo-microsoft", "text-[1.5rem]" %} #}
+        {% arIcon "grid-view", "text-[1.5rem]" %}
         <div class="grow">آفرهای روزانه</div>
       </a>
 
       <a
-        href="/fa/products/lighting.html"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "sunny-outline", "text-[1.5rem]" %} #}
+        {% arIcon "groups", "text-[1.5rem]" %}
         <div class="grow">باشگاه مشتریان</div>
       </a>
 
       {# <a
-        href="/fa/products/connection.html"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {% alwatrIcon "hardware-chip-outline", "text-[1.5rem]" %}
+        {% arIcon "hardware-chip", "text-[1.5rem]" %}
         <div class="grow"></div>
       </a> #}
 
       <a
-        href="/fa/order-list.html"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "file-tray-full-outline", "text-[1.5rem]" %} #}
+        {% arIcon "favorite", "text-[1.5rem]" %}
         <div class="grow">موردعلاقه‌ی شما</div>
       </a>
 
       <a
-        href="/fa/support.html"
+        href="/fa/"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "chatbox-ellipses-outline", "text-[1.5rem]" %} #}
+        {% arIcon "support-agent", "text-[1.5rem]" %}
         <div class="grow">پشتیبانی</div>
       </a>
 
       <a
-        href="tel:+989155599674"
+        href="tel:+989158064859"
         class="flex h-14 flex-nowrap items-center gap-3 rounded-full px-3 state-onSecondaryContainer hover:bg-secondaryContainer"
       >
-        {# {% alwatrIcon "call-outline", "text-[1.5rem]" %} #}
+        {% arIcon "call", "text-[1.5rem]" %}
         <div class="grow">تماس با ما</div>
       </a>
     </section>

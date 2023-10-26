@@ -18,10 +18,10 @@ dir: rtl
     class="m-0 h-full max-h-full w-full max-w-full transform-gpu touch-pan-x touch-pan-y touch-pinch-zoom overflow-clip break-words bg-background p-0 font-vazirmatn text-bodyMedium text-onBackground antialiased"
   >
     <div id="alwatr_pwa" class="mx-auto flex h-full max-w-5xl">
-      {% include "top-app-bar.njk" %}
       {% include "navigation-drawer.njk" %}
       <!-- App container -->
       <div class="relative flex h-full grow flex-col flex-nowrap items-stretch overflow-clip">
+        {% include "top-app-bar.njk" %}
         {{ content | safe }}
         {% include "bottom-navigation-bar.njk" %}
       </div>
